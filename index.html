@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./logo/calculator.png" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input id="inputField" placeholder="0" />
+        <br />
+        <button class="button" onclick="handleButtonPress(1)">1</button>
+        <button class="button" onclick="handleButtonPress(2)">2</button>
+        <button class="button" onclick="handleButtonPress(3)">3</button>
+        <button
+          style="background: #a7a5a5"
+          class="button"
+          onclick="handleButtonPress('+')"
+        >
+          +
+        </button>
+        <br />
+        <button class="button" onclick="handleButtonPress(4)">4</button>
+        <button class="button" onclick="handleButtonPress(5)">5</button>
+        <button class="button" onclick="handleButtonPress(6)">6</button>
+        <button
+          style="background: #8b8a8a"
+          class="button"
+          onclick="handleButtonPress('-')"
+        >
+          -
+        </button>
+        <br />
+        <button class="button" onclick="handleButtonPress(7)">7</button>
+        <button class="button" onclick="handleButtonPress(8)">8</button>
+        <button class="button" onclick="handleButtonPress(9)">9</button>
+        <button
+          style="background: #807d7d"
+          class="button"
+          onclick="handleButtonPress('*')"
+        >
+          *
+        </button>
+        <br />
+        <button class="button" onclick="handleButtonPress('.')">.</button>
+        <button class="button" onclick="handleButtonPress(0)">0</button>
+        <button class="button" onclick="handleClear()">C</button>
+        <button
+          style="background: #8f8d8d"
+          class="button"
+          onclick="handleButtonPress('/')"
+        >
+          /
+        </button>
+        <br />
+        <button class="buttonEqual" onclick="handleEqual()">=</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
